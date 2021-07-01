@@ -1,0 +1,40 @@
+连续数据离散化
+=========
+
+.. code-block:: python
+
+    # 对Namelen 字段进行处理
+    df['Namelen'] = pd.cut(df['Namelen'], bins=[0, 20, 30, 40, 50, 100], labels=[0, 1, 2, 3, 4])
+    # 对Numbers 字段进行处理,分别为一个人、两个人、三个人和多个人
+    df['Numbers'] = pd.cut(df[''], bins=[0, 1, 2, 3, 20], labels=[0, 1, 2, 3])
+
+
+类别编码
+========
+Onehot
+""""""""
+
+在计算机中需要计算不同特征之间的尺度，例如性别中的male和female，计算机是
+无法直接计算两个特征，但是你如果将male表示1，female表示2，下次计算机遇到
+了就会直接用2-1=1表示距离这样做的好处是计算机可以识别，并且可以快速的计算
+
+
+.. code-block:: python
+
+    for feature in ['Sex', 'Embarked', 'CabinType', 'AgeType', ]:
+        le = preprocessing.LabelEncoder()
+        le.fit(df[feature])
+        df[feature] = le.transform(df[feature])
+
+
+LabelEncoder
+""""""""""""""
+
+.. code-block:: python
+    pass
+
+
+
+
+
+

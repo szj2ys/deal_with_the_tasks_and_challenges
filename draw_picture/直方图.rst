@@ -1,0 +1,8 @@
+
+
+
+
+.. code-block:: python
+
+    # 根据索引排序
+    df['news_publ_date'].value_counts().sort_index().plot.bar()
