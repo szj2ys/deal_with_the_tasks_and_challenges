@@ -67,8 +67,8 @@
 以5个数据作为一个数据滑动窗口，在这个5个数据上取均值(收盘价)
 """""""""
 
-.. image:: https://github.com/szj2ys/deal_with_the_tasks_and_challenges/raw/main/resources/pandas-rolling-demo.gif
-.. image:: https://github.com/szj2ys/deal_with_the_tasks_and_challenges/raw/main/resources/pandas-expanding.gif
+.. image:: https://github.com/szj2ys/deal_with_the_tasks_and_challenges/raw/main/datasets/resources/pandas-rolling-demo.gif
+.. image:: https://github.com/szj2ys/deal_with_the_tasks_and_challenges/raw/main/datasets/resources/pandas-expanding.gif
 
 .. code-block:: python
 

@@ -68,7 +68,7 @@
 
 有日期数据错误，如下：
 
-.. image:: https://github.com/szj2ys/deal_with_the_tasks_and_challenges/raw/main/resources/century_bug.png
+.. image:: https://github.com/szj2ys/deal_with_the_tasks_and_challenges/raw/main/datasets/resources/century_bug.png
 
 .. code-block:: python
 
@@ -80,7 +80,7 @@
     df['Yr_Mo_Dy'] = df['Yr_Mo_Dy'].apply(fix_century)
 
 
-.. image:: https://github.com/szj2ys/deal_with_the_tasks_and_challenges/raw/main/resources/century_bug_fixed.png
+.. image:: https://github.com/szj2ys/deal_with_the_tasks_and_challenges/raw/main/datasets/resources/century_bug_fixed.png
 
 
 行列转换
