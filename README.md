@@ -14,7 +14,11 @@ Technology should not be segmented by tools, but organized around tasks and chal
 🧧
 📚
 🍉
+## 本地查看文档
 
+```shell
+docsify serve docs
+```
 
 
 
