@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">
-    <p>投资实践</p>
+    <p>DWTC</p>
 </h3>
 
 <p align="center">
@@ -18,9 +18,10 @@
     </a>
 </p>
 
+## Acknowledgements
+- [Pandas cheetsheet](http://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+- [W3School Pandas Tutorials](https://www.w3cschool.cn/hyspo/hyspo-cwjk372n.html)
 
-- 周期不能太长
-- 成功率
 
-凯利公式：
+
 
