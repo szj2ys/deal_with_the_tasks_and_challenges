@@ -19,6 +19,7 @@
 </p>
 
 ## Acknowledgements
+- [Pandas Official Documents](https://pandas.pydata.org/docs/user_guide/10min.html)
 - [Pandas cheetsheet](http://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 - [W3School Pandas Tutorials](https://www.w3cschool.cn/hyspo/hyspo-cwjk372n.html)
 
