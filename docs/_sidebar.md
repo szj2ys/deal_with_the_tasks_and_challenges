@@ -1,5 +1,6 @@
 
 - [首页](README.md)
+- [特征工程Tips](特征工程Tips.md)
 - [特征工程](others/特征工程.md)
 - [时间序列](others/时间序列.md)
 - [数据统计](others/数据统计.md)

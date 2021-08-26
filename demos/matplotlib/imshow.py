@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg #mpimg 用于读取图片
+import matplotlib.image as mpimg  #mpimg 用于读取图片
 # 图片处理的matplotlib方法
 # interpolation插值运算,cmap表示绘图时的样式
 # interpolation：
@@ -9,10 +9,13 @@ import matplotlib.image as mpimg #mpimg 用于读取图片
 # cmap=‘hot’热量图；gray灰度图
 pic = mpimg.imread('shenzhen.jpg')
 # 控制画布大小
-plt.figure(num=1, figsize=(9,5),)
+plt.figure(
+    num=1,
+    figsize=(9, 5),
+)
 # 仅显示图片第一个通道
-pic = pic[:,:,0]
-plt.imshow(pic,interpolation='nearest',cmap='hot')
+pic = pic[:, :, 0]
+plt.imshow(pic, interpolation='nearest', cmap='hot')
 # 压缩90%，即控制力度图例大小
 plt.colorbar(shrink=0.9)
 # 关闭坐标轴刻度

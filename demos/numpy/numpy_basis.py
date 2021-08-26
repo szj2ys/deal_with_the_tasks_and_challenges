@@ -4,41 +4,41 @@ import numpy as np
 print(np.__version__)
 
 #创建一维数组
-print(np.array([1,2,3]))
+print(np.array([1, 2, 3]))
 
 #创建二维数组
-print(np.array([(1,2,3),(4,5,6)]))
+print(np.array([(1, 2, 3), (4, 5, 6)]))
 
 #创建全零数组
-print(np.zeros((3,3)))
+print(np.zeros((3, 3)))
 
 #创建全一数组
-print(np.ones((2,3,4)))
+print(np.ones((2, 3, 4)))
 
 #创建一维等差数组(0 1 2 3 4)
 print(np.arange(5))
 
 #创建二维等差数列
-print(np.arange(6).reshape(2,3))
+print(np.arange(6).reshape(2, 3))
 
 #创建单位矩阵（二维数组）
-print(np.eye(3,3))
+print(np.eye(3, 3))
 
 #创建等间隔的一维数组
 print(np.linspace(1, 10, num=6))
 
 #创建二维随机数组
-print(np.random.rand(2,3))
+print(np.random.rand(2, 3))
 
 #创建二维随机整数数组（数值小于 5）
-print(np.random.randint(5, size=(2,3)))
+print(np.random.randint(5, size=(2, 3)))
 
 #依据自定义函数创建数组
 print(np.fromfunction(lambda i, j: i + j, (3, 3)))
 
 #生成二维示例数组（可以看作矩阵）
-A = np.array([[1,2],[3,4]])
-B = np.array([[5,6],[7,8]])
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
 
 #矩阵乘法运算
 print(np.dot(A, B))
@@ -53,7 +53,7 @@ print(A.T)
 print(np.linalg.inv(A))
 
 #三角函数
-a = np.array([10,20,30,40,50])
+a = np.array([10, 20, 30, 40, 50])
 print(np.sin(a))
 
 #以自然对数函数为底数的指数函数
@@ -77,8 +77,8 @@ print(a.resize(2, 3))
 #展平数组
 print(a.ravel())
 
-a = np.random.randint(10, size=(3, 3))#随机数：0-10
-b = np.random.randint(10, size=(3, 3))#随机数：0-10
+a = np.random.randint(10, size=(3, 3))  #随机数：0-10
+b = np.random.randint(10, size=(3, 3))  #随机数：0-10
 
 # 垂直拼合数组
 print(np.vstack((a, b)))
@@ -129,38 +129,38 @@ print(np.random.rand())
 print(np.random.rand(5))
 
 #生成2x3的二维数组
-print(np.random.rand(2,3))
+print(np.random.rand(2, 3))
 
 #np.random.rand()  生成一个浮点数或N维浮点数组，取数范围：正态分布的随机样本数
 print(np.random.randn())
 
-print(np.random.randn(2,3))
+print(np.random.randn(2, 3))
 
 # np.random.standard_normal(size=None)：生成一个浮点数或N维浮点数组，取数范围：标准正态分布随机样本
 print(np.random.standard_normal(2))
-print(np.random.standard_normal((2,3)))
+print(np.random.standard_normal((2, 3)))
 
 # np.random.randint(low, high=None, size=None, dtype='l')：
 # 生成一个整数或N维整数数组，取数范围：若high不为None时，取[low,high)之间随机整数，否则取值[0,low)之间随机整数。
 print(np.random.randint(2))
 
-print(np.random.randint(2,size=5))
+print(np.random.randint(2, size=5))
 
-print(np.random.randint(2,6,size=5))
+print(np.random.randint(2, 6, size=5))
 
 # np.random.choice(a, size=None, replace=True, p=None)：
 # 从序列中获取元素，若a为整数，元素取值为np.range(a)中随机数；若a为数组，取值为a数组元素中随机元素
-print(np.random.choice(2,2))
+print(np.random.choice(2, 2))
 
-print(np.random.choice(np.array(['a','b','c','f']),(2,3)))
+print(np.random.choice(np.array(['a', 'b', 'c', 'f']), (2, 3)))
 
 # np.random.shuffle(x)：对X进行重排序，如果X为多维数组，整行重排
-list1 = [1,2,3,4,5]
+list1 = [1, 2, 3, 4, 5]
 np.random.shuffle(list1)
 print(list1)
 
 # 将[0,1,2,3,4,5,6,7,8]转为[[0,1,2],[3,4,5],[6,7,8]]
-arr = np.arange(9).reshape(3,3)
+arr = np.arange(9).reshape(3, 3)
 print(arr)
 
 # 打乱arr的元素顺序
