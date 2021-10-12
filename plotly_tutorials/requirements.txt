@@ -1,2 +1,5 @@
 kaleido
 plotly
+dash
+dash_bio
+dash_bootstrap_components
