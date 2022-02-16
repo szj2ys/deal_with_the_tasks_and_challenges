@@ -2,9 +2,9 @@ import pandas as pd
 
 #定义资料集
 left = pd.DataFrame({
-    'key': ['K0', 'K1', 'K2', 'K3'],
-    'A': ['A0', 'A1', 'A2', 'A3'],
-    'B': ['B0', 'B1', 'B2', 'B3']
+    'key': ['K0', 'K1', 'K2', 'K3', 'K4'],
+    'A': ['A0', 'A1', 'A2', 'A3', 'A4'],
+    'B': ['B0', 'B1', 'B2', 'B3', '']
 })
 right = pd.DataFrame({
     'key': ['K0', 'K1', 'K2', 'K3'],

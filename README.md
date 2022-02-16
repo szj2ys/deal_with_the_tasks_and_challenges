@@ -22,7 +22,33 @@ docsify serve docs
 
 
 
+[数据对数化意义](https://wenku.baidu.com/view/24ef9c42ef630b1c59eef8c75fbfc77da2699725.html)：
 
+对数在其定义域内是单调递增函数，取对数不会改变数据的相对关系，去对数的作用有
+- 缩小数据的绝对数值，方便计算。
+- 取对数后，可以将乘法运算转换成加法运算；
+- 取对数不会改变数据的性质和相关关系，但压缩了变量的尺度；
+- 所得到的数据易消除异方差问题；
+
+如果数据中有负数就不能去对数了。实践中，取对数的一般是水平量，而不是比例数据，例如变化率等
+
+
+
+## 多列合并成list
+```python
+import pandas as pd
+
+# data
+df = pd.DataFrame({'column1': ['key1', 'key1', 'key2', 'key2'],
+                     'column2': ['value1', 'value2', 'value3', 'value3']})
+print(df)
+# groupby 后的数据格式为Series，reset_index把Series转成Dataframe
+df = df.groupby('column1').column2.apply(lambda x: list(x)).reset_index()  
+# df = data.groupby('column1').column2.apply(list).reset_index()
+# df = data.groupby('column1').column2.apply(list).to_dict()
+print(df)
+print(type(df))
+```
 
 
 
