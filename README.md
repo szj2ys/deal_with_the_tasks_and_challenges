@@ -21,6 +21,8 @@ docsify serve docs
 ```
 
 # TODO: pandas的assign用法
+# TODO: pandas的explode用法
+# TODO: pandas的
 
 
 [数据对数化意义](https://wenku.baidu.com/view/24ef9c42ef630b1c59eef8c75fbfc77da2699725.html)：
@@ -35,21 +37,10 @@ docsify serve docs
 
 
 
-## 多列合并成list
-```python
-import pandas as pd
 
-# data
-df = pd.DataFrame({'column1': ['key1', 'key1', 'key2', 'key2'],
-                     'column2': ['value1', 'value2', 'value3', 'value3']})
-print(df)
-# groupby 后的数据格式为Series，reset_index把Series转成Dataframe
-df = df.groupby('column1').column2.apply(lambda x: list(x)).reset_index()  
-# df = data.groupby('column1').column2.apply(list).reset_index()
-# df = data.groupby('column1').column2.apply(list).to_dict()
-print(df)
-print(type(df))
-```
+
+
+
 
 
 
